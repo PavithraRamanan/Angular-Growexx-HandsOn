@@ -1,0 +1,29 @@
+<div class="container">
+  <form>
+    <div class="warning" *ngIf="errFlag">{{ errMsg }}</div>
+    <div>
+      <label class="label">Username </label> <br />
+      <input
+        class="input"
+        required
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div>
+      <label class="label">Password </label> <br />
+      <input
+        class="input"
+        required
+        type="password"
+        name="password"
+        ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div>
+      <input class="input" type="submit" value="Login" (click)="loginUser()" />
+    </div>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+.container {
+  background-color: rgb(176, 207, 207);
+  /* height: 100%; */
+  width: 100%;
+  align-items: center;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.input {
+  display: flex;
+  margin-left: 25px;
+  align-items: center;
+}
+
+.label {
+  margin-top: 15px;
+  margin-left: 25px;
+  display: flex;
+  padding: 0;
+}
+.warning {
+  color: red;
+}
